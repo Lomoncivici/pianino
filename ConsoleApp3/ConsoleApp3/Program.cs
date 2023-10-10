@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.Design;
 using System.Reflection.PortableExecutable;
-
+Console.WriteLine("Инструкция: \n 1) клавиши от a до u \n 2) при двойном нажатии на F1 или F2 переключаются герцовка (я беспонятия как это правильно называется 😣 )\n 3) по стандарту качества стоит F1 герцовка");
 while (true)
 {
     ConsoleKeyInfo sound = Console.ReadKey();
@@ -23,8 +23,9 @@ while (true)
 
         Console.WriteLine(String.Join(", ", tonalnasti));
     }
-
-    while (true)
+    
+    bool a = true;
+    while (a)
     {
         if (sound.Key == ConsoleKey.A)
         {
@@ -75,5 +76,14 @@ while (true)
             Console.Beep(tonalnasti[11], 100);
         }
         sound = Console.ReadKey(true);
+
+        if (sound.Key == ConsoleKey.F1)
+        {
+            a = false;
+        }
+        if (sound.Key == ConsoleKey.F2)
+        {
+            a = false;
+        }
     }
 }
