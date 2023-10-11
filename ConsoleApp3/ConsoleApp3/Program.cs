@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.Design;
 using System.Reflection.PortableExecutable;
-Console.WriteLine("Инструкция: \n 1) клавиши от a до u \n 2) при двойном нажатии на F1 или F2 переключаются тональность \n 3) по стандарту качества стоит F1 герцовка");
+Console.WriteLine("Инструкция: \n 1) клавиши от a до u \n 2) при двойном нажатии на F1 или F2 переключаются тональности \n 3) по стандарту качества стоит F1 герцовка");
 while (true)
 {
     ConsoleKeyInfo sound = Console.ReadKey();
